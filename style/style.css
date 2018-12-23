@@ -1,0 +1,102 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial;
+  background: silver;
+}
+
+.logo {
+  width: 80px;
+  margin-right: 100px;
+}
+
+.header {
+  background: #a50044;
+}
+
+.articles {
+  width: 100%;
+  padding: 0 100px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.article {
+  margin-bottom: 30px;
+}
+
+.article-image {
+  width: 300px;
+  margin-right: 20px;
+}
+
+.banner {
+  width: 100%;
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.team-name {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 50px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  align-items: center;
+  background: #004d98;
+  margin-top: 30px;
+}
+
+@media (max-width: 767.98px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .articles {
+    padding: 0 50px;
+  }
+}
+
+.footer-text {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: black;
+}
+
+.link {
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #db0030;
+  opacity: 1;
+  z-index: 1000;
+}
+
+.loader__img {
+  width: 300px;
+  position: relative;
+  top: -530px;
+}
